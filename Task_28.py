@@ -3,14 +3,14 @@
 # 2 2
 # 4
 
-def summa(a, b):
+def sum(a, b):
     if b == 0:
         return a
     else:
         if b > 0:
-            return summa(a + 1, b - 1)
+            return sum(a + 1, b - 1)
 
 
 a = int(input('Введите целое неотрицательное число: '))
 b = int(input('Введите целое неотрицательное число: '))
-print(summa(a, b))
+print(sum(a, b))
